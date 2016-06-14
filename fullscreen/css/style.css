@@ -1,0 +1,2 @@
+#content{ width:100%;}
+#play{ position:absolute; z-index:999; top:50%; left:45%; display:block; text-decoration:none; text-align: center; width:100px; height:30px; padding:3px 5px; background:#00c; color:#fff; line-height:30px;}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>showdatatimepicker</title>
+	<link rel="stylesheet" href="DateTimePicker.css" />
+	<script src="jquery-2.1.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="DateTimePicker.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<input class="form-control" type="text" readonly="readonly" id="wfsj" eventid="wfsj" data-field="datetime" data-format="yyyy-MM-dd hh:mm:ss" tabindex="3" value="2016-04-29 10:45:51">
+	<div id="dtBox" class="dtpicker-overlay dtpicker-mobile" style="display:none"><div class="dtpicker-bg"><div class="dtpicker-cont"><div class="dtpicker-content"><div class="dtpicker-subcontent"></div></div></div></div></div>
+</body>
+<script>
+	//日期控件设置
+    $("#dtBox").DateTimePicker(
+    {
+        dateTimeFormat: "yyyy-MM-dd HH:mm:ss",
+        shortDayNames: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+        fullDayNames: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+        shortMonthNames: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+        fullMonthNames: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+        titleContentDateTime: "设置日期",
+        setButtonContent: "确定",
+        clearButtonContent: "取消",
+        formatHumanDate:function(date) 
+        {
+          return date.dayShort + "," + date.yyyy + "年" + date.month + date.dd + "日 ";
+        },
+
+        addEventHandlers: function()
+        {
+            var dtPickerObj = this;
+        
+            $("#wfsj").click(function(e)
+            {
+                e.stopPropagation();
+                dtPickerObj.showDateTimePicker($("#wfsj"));
+            });
+        }
+    });
+</script>
+</html>

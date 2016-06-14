@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dialog_test</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/df_action.js"></script>
+</head>
+<body>
+	<button onclick="show_dialog({'top':'5%','title':'!','content':'???','type':''})">alert</button>
+	<button onclick="show_dialog({'top':'5%','title':'?','content':'!!!','type':'confirm'})">confirm</button>
+</body>
+<script type="text/javascript">
+	function show_dialog(obj){
+		df.dialog.show(obj,function(result){
+			//console.log(result);
+			get_apply(result);
+		});
+	}
+	function get_apply(result){
+		//console.log(result);
+		if(result=="ok"){
+			//code here
+		}else if(result=="cancel"){
+			//code here
+		}else{
+			//code here
+		}
+	}
+</script>
+</html>

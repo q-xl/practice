@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="keywords" content="Weilin" />
+<meta name="description" content="Weilin" />
+<title>企业掌舵者</title>
+  <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+<style>
+	*{margin:0;
+		padding:0;}
+	body{
+		background-color:rgb(247,247,247);}
+	#head_bg{
+		position:relative;
+	}
+	
+	#www{
+        position: absolute;
+        z-index: 99;
+       
+		bottom:33%;
+        left: 45%;
+        text-align: center;
+		
+    }
+	a{ color: #fff;
+        text-decoration: none;}
+	img{
+		width:100%;
+		height:auto;}
+	#footer{
+		background-color:rgb(43,153,238);
+		}
+	
+</style>
+</head>
+<body>
+	<!--头部-->
+    <div id="head_bg">
+    	<img src="bg.png"/>
+         <div id="www">
+    		<a href="http://www.51iworld.com">www.51iworld.com</a>
+    	</div>
+    </div>
+   
+    <div>
+    	<a href="javascript:checkPlatform();"><img src="down.png"/></a>
+    </div>
+    <div>
+    	<img src="body2.png"/>
+    </div>
+    <div id="footer" style="padding-bottom:2em;">
+    	<img src="footer.png"/>
+        <div>
+           <div > 
+                <div id="div1" style="display:inline-block; width:35%; padding-left:4%;vertical-align:top;" ><img src="QQ.png"/></div> 
+                <div id="div2" style="display:inline-block; width:55%;">
+                    <p><a href="#">咨询QQ 【1412788765】</a></p>
+                    <p><a href="#">服务QQ群【155418525】</a></p>
+                </div> 
+			</div> 
+             <div style="margin-top:1em;"> 
+                <div style="display:inline-block; width:35%;padding-left:4%;" ><img src="FW.png"/> </div> 
+                <div style="display:inline-block; width:55%;">
+                 <a href="tel://4008618388"><img src="DH.png" /></a></div> 
+			</div> 
+             <div style="margin-top:1em;"> 
+                <div  style="display:inline-block; width:35%;padding-left:4%; " ><img src="DZYJ.png"/> </div> 
+                <div  style="display:inline-block; width:55%;vertical-align:top;">
+                  <a href="mailto:support@51iWorld.com">support@51iWorld.com</a></div> 
+			</div> 
+            <div style="margin-top:1em;"> 
+                <div style="display:inline-block; width:35%;padding-left:4%;vertical-align:top;" ><img src="FWNR.png"/> </div> 
+                <div  style="display:inline-block; width:55%; color:#FFF;">
+                 以上服务方式为客户提供平台咨询、使用指导、在线培训、问题解答、定制方案服务、其他服务如现场服务、上门培
+					训、需求调研和分析、定制开发和服务。
+                  </div> 
+			</div> 
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+//手机端判断各个平台浏览器及操作系统平台
+function checkPlatform(){
+  if(/android/i.test(navigator.userAgent)){
+      // document.write("This is Android'browser.");//这是Android平台下浏览器
+      window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=faster.frame.task";
+  }
+  if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+      // document.write("This is iOS'browser.");//这是iOS平台下浏览器
+      window.location.href="IOS.html";
+  }
+  if(/MicroMessenger/i.test(navigator.userAgent)){
+  //     document.write("This is MicroMessenger'browser.");//这是微信平台下浏览器
+  }
+}
+</script>
+</html>

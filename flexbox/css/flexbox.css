@@ -1,0 +1,8 @@
+*{ margin: 0; padding: 0; }
+
+body{ background: #eee; }
+.flexbox_container1{ width: 100%; height: 400px; -webkit-display: flex; display: flex; -webkit-flex-direction: row; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; align-content: center; background: #f0f0f0; }
+.flexbox_container2{ width: 100%; height: 400px; -webkit-display: flex; display: flex; -webkit-flex-flow: column wrap; flex-flow: column wrap; justify-content: center; align-items: flex-start; align-content: center; background: #f4f4f4;}
+.flexbox_block1{ width: 100px; height: 100px; background: #c00; color: #fff; }
+.flexbox_block2{ width: 100px; height: 100px; background: #0c0; color: #fff; }
+.flexbox_block3{ width: 100px; height: 100px; background: #00c; color: #fff; }

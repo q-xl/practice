@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>fullscreen</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div id="content">
+		<img src="images/pic1.jpg" width="100%" />
+	</div>
+	<a id="play" href="javascirpt:void(0);" onclick="start_fullscreen('content');">play</a>
+</body>
+<script>
+	function start_fullscreen (id) {
+		var main = document.getElementById(id);
+		if (main.requestFullScreen) {
+			console.log("1!");
+			main.requestFullScreen();
+		}else if(main.mozRequestFullScreen){
+			console.log("2!");
+			main.mozRequestFullScreen();
+		}else if(main.webkitRequestFullScreen){
+			console.log("3!");
+			main.webkitRequestFullScreen();
+		}else{
+			console.log("no!");
+		};
+	}
+</script>
+</html>

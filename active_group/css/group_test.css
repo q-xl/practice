@@ -1,0 +1,40 @@
+/*
+	动态群组架构图
+	by q&xl
+	2016.04.29
+*/
+
+*{ margin: 0; padding: 0;}
+
+body{ font-size: 12px; font-family: "Microsoft YaHei";}
+
+.group_content{ width: 100%;}
+
+/*
+	常用数值说明：
+	圆形半径：默认均为10px，需要与js对应
+	圆形的宽度与高度：默认均为20px
+	横线长度：默认为50px
+	第二层间距：默认为50px，最后一层为0，需要与js对应
+*/
+.first_node,.second_nodes,.third_nodes{ width: 70px; height: 20px;}
+.second_group{ margin-bottom: 50px;}
+.second_group:last-child{ margin-bottom: 0px;}
+.third_group{ display: none; vertical-align: top;}
+.first_node,.third_nodes{ display: inline-block; vertical-align: middle;}
+.second_nodes{ display: inline-block; vertical-align: top;}
+.circle{ display: inline-block; vertical-align: middle; width: 20px; height: 20px; border-radius: 50%; background: #c00;}
+.first_node .circle{ background: #c00;}
+.second_nodes .circle{ background: #0c0; cursor: pointer;}
+
+/* 第三层节点不同状态下的样式定义，可扩展 */
+.third_nodes_type1 .circle{ background: #00c;}
+.third_nodes_type2 .circle{ background: #0cc;}
+
+.x_line{ display: inline-block; vertical-align: middle; width: 50px; height: 0px; border-top: 1px solid #999;}
+.y_line{ display: inline-block; vertical-align: middle; width: 0px; border-left: 1px solid #999;}
+
+.sub_area{ display: inline-block; vertical-align: middle; width: auto;}
+
+.main_y{ vertical-align: top; margin-top: 10px;}
+.sub_y{ display: block; height: 50px; margin-top: -10px; margin-bottom: -10px;}

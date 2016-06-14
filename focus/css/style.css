@@ -1,0 +1,24 @@
+
+body,div,ul,li,img{ margin: 0; padding: 0;}
+
+.focus_box{ overflow: hidden; margin: 0 auto;}
+.focus_box::-webkit-scrollbar{ width: 0px;}
+.pic_box{ position: relative;}
+.pic_box img{ float: left; vertical-align: middle;}
+.small_pics{ background-color: #333;}
+
+@media (min-width: 1280px) {
+	.small_pics{ width: 100%;}
+	.focus_box{ }
+}
+
+
+@media (max-width: 1024px) {
+	.small_pics{ width: 90%;}
+	.focus_box{ width: 60%;}
+}
+
+@media (max-width: 480px) {
+	.small_pics{ display: none;}
+	.focus_box{ width: 95%;}
+}

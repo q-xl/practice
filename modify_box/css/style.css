@@ -1,0 +1,8 @@
+ 
+ .df_bgmask{ position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.3); top: 0; left: 0;}
+
+ .df_dialog{ -webkit-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box; position: fixed; z-index: 99; width: 80%; left: 10%; background: #eee; border-radius: 3px; box-shadow: 0 0 20px #999; padding:5px;}
+ .df_dialog_title{ color: #1c1c1c; font-weight: bold; font-size: 1.2em;}
+ .df_dialog_content{ color: #1c1c1c;}
+ .df_dialog_button{ float: right;}
+ .df_dialog_button a{ text-decoration: none; color: #fe8012; font-size: 0.5em;}

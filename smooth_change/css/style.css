@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #666666;
+}
+.content {
+  -webkit-transition: all 0.5s ease-in 0.1s;
+  -moz-transition: all 0.5s ease-in 0.1s;
+  -o-transition: all 0.5s ease-in 0.1s;
+  -ms-transition: all 0.5s ease-in 0.1s;
+  transition: all 0.5s ease-in 0.1s;
+}
+section {
+  width: 100%;
+}
+section img {
+  width: 100%;
+}

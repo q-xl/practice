@@ -1,0 +1,6 @@
+
+body,div,ul,li,img{ margin: 0; padding: 0;}
+
+.list_box{ width: 100%; overflow-x:hidden; overflow-y: auto;}
+.list_box::-webkit-scrollbar{ width: 0px;}
+.list_content ul li{ list-style: none; height: 5em; background:rgba(254, 241, 218, 0.7); text-align: center; color: #000; font-weight: bold; line-height: 5em; border-bottom: 2px dashed #999;}
