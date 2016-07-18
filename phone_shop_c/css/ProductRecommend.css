@@ -1,0 +1,74 @@
+﻿/** 
+ * 优吉屯农场手机客户端商品详情-农场推荐
+ * by q&xl
+ * 2016.7.7
+ */
+
+.product_recommend{ margin-top: 5px; }
+
+.recommend_item{ text-decoration:none; }
+.recommend_item dl{ width:235px; height:223px; border: 1px solid #dfdfdf; margin-bottom: 6px; }
+.recommend_item dl dt{ width:100%; height:160px; }
+.recommend_item dl dt img{ width:100%; height:100%; }
+.recommend_item dl dd{ width:100%; height:63px; background:#fff; }
+.recommend_item dl dd p{ width:96%; margin:0 auto; }
+.recommend_text{ width:100%; color:#0e0e0e; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+.recommend_info span{ color:#a4a4a4; font-size:8.1pt; }
+.recommend_info strong{ color:#d81c1c; font-size:11.7pt; }
+
+/* 媒体查询 */
+@media (min-height: 800px) {
+
+
+}
+@media (max-width: 425px) {
+	
+	.recommend_item dl{ width:205px; }
+
+}
+
+@media (max-width: 414px) {
+
+	.recommend_item dl{ width:200px; }
+
+}
+
+/* 魅族mx2 */
+
+@media (max-width: 400px) {
+
+	.recommend_item dl{ width:195px; }
+
+}
+
+
+
+@media (max-width: 384px) {
+
+	.recommend_item dl{ width:185px; }
+
+}
+
+
+
+@media (max-width: 375px) {
+
+	.recommend_item dl{ width:180px; }
+
+}
+
+
+
+@media (max-width: 360px) {
+
+	.recommend_item dl{ width:175px; }
+
+}
+
+
+
+@media (max-width: 320px) {
+
+	.recommend_item dl{ width:155px; }
+
+}

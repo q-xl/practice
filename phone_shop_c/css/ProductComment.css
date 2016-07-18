@@ -1,0 +1,16 @@
+/** 
+ * 优吉屯农场手机客户端商品详情-评论
+ * by q&xl
+ * 2016.7.6
+ */
+
+.product_comment{ background: #fff; padding: 0 0 11px 13px; margin-top: 7px; border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; }
+
+.comment_user{ height: 45px; border-bottom: 1px solid #e7e9ec; }
+.comment_user span{ color: #161619; }
+.comment_user img{ width: 23px; height: 23px; border-radius: 50%; margin-right: 8px; }
+.comment_date{ margin-right: 11px; }
+.comment_content{ height: 100px; background: #fff; }
+.comment_info{ width: 100%; }
+.stars{ font-size: 14pt; color: #ff9000; }
+.comment_text p{ color: #161619; line-height: 17pt; }

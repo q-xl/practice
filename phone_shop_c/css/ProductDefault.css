@@ -1,0 +1,109 @@
+/** 
+ * 优吉屯农场手机客户端商品详情首页
+ * by q&xl
+ * 2016.7.5
+ */
+
+.product_default{ width: 100%; height: 100%; overflow-y: auto; }
+.pic_box img{ width: 100%; }
+
+.product_basic{ height: 200px; padding: 0 17px 0 10px; background: #fff; border-bottom: 1px solid #dfdfdf; margin-bottom: 6px; }
+.product_basic h1{ font-size: 11.7pt; color: #212121; font-weight: normal; }
+.product_basic b{ color: #f12626; font-weight: normal; }
+.product_basic strong{ font-size: 18pt; color: #d81c1c; }
+.other_basic{ color: #a4a4a4; }
+.other_basic span{ margin-right: 62px; }
+
+.get_card{ width: 100%; height: 44px; line-height: 44px; text-decoration: none; border-top: 1px solid #eeeff1; }
+.get_card span{ vertical-align: middle; color: #92939d;}
+.card_icon{ display: inline-block; vertical-align: middle; width: 13px; height: 13px; line-height: 13px; background: #f23030; border-radius: 3px; color: #fff; font-size: 8.1pt; margin-right: 6px; }
+
+.product_count{ display: block; text-decoration: none; padding: 0 17px 0 10px; height: 44px; line-height: 44px; border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; background: #fff; margin-bottom: 6px; }
+.product_count span{ color: #92939d; margin: 0 9px 0 0; }
+.product_count strong{ color: #2b2b2b; font-weight: normal; }
+
+.product_comment{ padding: 0 17px 11px 10px; margin-bottom: 8px; border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; background: #fff;}
+.comment_title{ width: 100%; height: 44px; line-height: 44px; border-bottom: 1px solid #e7e9ec; }
+.comment_title span{ color: #94959f; }
+.comment_title strong{ float: right; color: #111115; font-weight: normal; }
+.comment_title strong b{ color: #f23030; margin-left: 5px; font-weight: normal; }
+.comment_content{ height: 100px; }
+.comment_info{ width: 100%; }
+.stars{ font-size: 14pt; color: #ff9000; }
+.comment_user{ font-size: 8.1pt; }
+.comment_text p{ color: #161619; line-height: 17pt; }
+
+.shop_info{ height: 123px; padding: 0 17px 0 10px; background: #fff; border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; margin-bottom: 12px; }
+
+.shop_basic{ margin: 13px auto; }
+.shop_name{}
+.shop_name dt,.shop_name dd{ display: inline-block; vertical-align: middle; }
+.shop_name dt{ width: 43px; height: 39px; border: 1px solid #dfdfdf; }
+.shop_name dt img{ width: 100%; }
+.shop_name dd{ margin-left: 8px; }
+.shop_name dd div img{ width: 13px; }
+.goto_shop{ display: block; text-decoration: none; width: 61px; height: 21px; line-height: 21px; border: 1px solid #690; border-radius: 3px; color: #690; text-align: center; }
+
+.shop_summary{ width: 100%; }
+.summary_item{ vertical-align: middle; width: 73px; height: 49px; padding: 0 20px; border-right: 1px solid #e2e2e2; text-align: center; }
+.summary_item dt{ color: #161619; margin-top: 5px; }
+.summary_item dd{ color: #969696; }
+.summary_text{ width: 78px; padding-left: 8px; vertical-align: middle; }
+.summary_text span{ color: #969696;}
+.summary_text span strong{ color: #ff5000; margin-left: 5px;}
+
+/* 媒体查询 */
+@media (min-height: 800px) {
+
+
+}
+@media (max-width: 425px) {
+	
+	.summary_item{ width: 82px; padding: 0 8px; }
+
+}
+
+@media (max-width: 414px) {
+
+	.summary_item{ width: 72px; padding: 0 10px; }
+
+}
+
+/* 魅族mx2 */
+
+@media (max-width: 400px) {
+
+
+}
+
+
+
+@media (max-width: 384px) {
+
+	.summary_item{ width: 68px; padding: 0 8px; }
+
+}
+
+
+
+@media (max-width: 375px) {
+
+	.summary_item{ width: 70px; padding: 0 8px; }
+
+}
+
+
+
+@media (max-width: 360px) {
+
+	.summary_item{ width: 74px; padding: 0 3px; }
+
+}
+
+
+
+@media (max-width: 320px) {
+
+	.summary_item{ width: 68px; padding: 0; }
+
+}

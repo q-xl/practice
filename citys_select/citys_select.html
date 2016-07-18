@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>citys_select</title>
+	<link rel="stylesheet" type="text/css" href="css/citys_select.css" />
+	<script src="js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/action.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="div_form_body_simple">
+		<div class="form_item">
+			<div id="city_select" class="inline_layout_mid" class="city_select_area">
+				<span>请选择省市区</span><img class="float_r" src="images/arrow_down.png" />
+				<div class="city_select_box">
+					<div class="city_type_tab">
+						<a id="provice_name" class="select_type inline_layout_mid" href="javascript:void(0);">省份</a><a id="city_name" class="normal_type inline_layout_mid" href="javascript:void(0);">城市</a><a id="area_name" class="normal_type inline_layout_mid" href="javascript:void(0);">县区</a><a id="street_name" class="normal_type inline_layout_mid" href="javascript:void(0);">街道</a>
+					</div>
+					<div class="choose_items">
+						<div id="provice_collection">
+							<div class="name_group">
+								<label class="inline_layout_top">A-G</label>
+								<div class="inline_layout_top">
+									<a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">安徽</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">北京</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">重庆</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">福建</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">甘肃</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">贵州</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">广东</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">广西</a>
+								</div>
+							</div>
+							<div class="name_group">
+								<label class="inline_layout_top">H-K</label>
+								<div class="inline_layout_top">
+									<a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">海南</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">河北</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">黑龙江</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">河南</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">吉林</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">湖北</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">湖南</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">江苏</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">江西</a>
+								</div>
+							</div>
+							<div class="name_group">
+								<label class="inline_layout_top">L-S</label>
+								<div class="inline_layout_top">
+									<a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">辽宁</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">内蒙古</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">宁夏</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">青海</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">四川</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">山东</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">上海</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">山西</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">陕西</a>
+								</div>
+							</div>
+							<div class="name_group">
+								<label class="inline_layout_top">T-Z</label>
+								<div class="inline_layout_top">
+									<a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">天津</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">新疆</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">西藏</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">云南</a><a class="inline_layout_mid" href="javascript:void(0);" name="provice_name">浙江</a>
+								</div>
+							</div>
+						</div>
+						<div id="city_collection">
+							<div class="name_group">
+								<label class="inline_layout_top">A-G</label>
+								<div class="inline_layout_top">
+									<a class="inline_layout_mid" href="javascript:void(0);" name="city_name">广州</a><a class="inline_layout_mid" href="javascript:void(0);" name="city_name">深圳</a><a class="inline_layout_mid" href="javascript:void(0);" name="city_name">珠海</a><a class="inline_layout_mid" href="javascript:void(0);" name="city_name">汕头</a><a class="inline_layout_mid" href="javascript:void(0);" name="city_name">佛山</a><a class="inline_layout_mid" href="javascript:void(0);" name="city_name">湛江</a><a class="inline_layout_mid" href="javascript:void(0);" name="city_name">江门</a><a class="inline_layout_mid" href="javascript:void(0);" name="city_name">茂名</a>
+								</div>
+							</div>
+							<div class="name_group">
+								<label class="inline_layout_top">H-K</label>
+								<div class="inline_layout_top">
+									<a class="inline_layout_mid" href="javascript:void(0);" name="city_name">惠州</a><a class="inline_layout_mid" href="javascript:void(0);" name="city_name">梅州</a><a class="inline_layout_mid" href="javascript:void(0);" name="city_name">肇庆</a><a class="inline_layout_mid" href="javascript:void(0);" name="city_name">清远</a><a class="inline_layout_mid" href="javascript:void(0);" name="city_name">东莞</a><a class="inline_layout_mid" href="javascript:void(0);" name="city_name">中山</a><a class="inline_layout_mid" href="javascript:void(0);" name="city_name">顺德</a><a class="inline_layout_mid" href="javascript:void(0);" name="city_name">南海</a>
+								</div>
+							</div>
+						</div>
+						<div id="area_collection">
+							<div class="name_group">
+								<label class="inline_layout_top">A-G</label>
+								<div class="inline_layout_top">
+									<a class="inline_layout_mid" href="javascript:void(0);" name="area_name">天河区</a><a class="inline_layout_mid" href="javascript:void(0);" name="area_name">黄埔区</a><a class="inline_layout_mid" href="javascript:void(0);" name="area_name">越秀区</a><a class="inline_layout_mid" href="javascript:void(0);" name="area_name">海珠区</a><a class="inline_layout_mid" href="javascript:void(0);" name="area_name">白云区</a><a class="inline_layout_mid" href="javascript:void(0);" name="area_name">增城</a><a class="inline_layout_mid" href="javascript:void(0);" name="area_name">从化</a><a class="inline_layout_mid" href="javascript:void(0);" name="area_name">花都</a>
+									<a class="inline_layout_mid" href="javascript:void(0);" name="area_name">番禺</a>
+								</div>
+							</div>
+						</div>
+						<div id="street_collection">
+							<div class="name_group">
+								<label class="inline_layout_top">A-G</label>
+								<div class="inline_layout_top">
+									<a class="inline_layout_mid" href="javascript:void(0);" name="street_name">街道1</a><a class="inline_layout_mid" href="javascript:void(0);" name="street_name">街道2</a><a class="inline_layout_mid" href="javascript:void(0);" name="street_name">街道3</a><a class="inline_layout_mid" href="javascript:void(0);" name="street_name">街道4</a><a class="inline_layout_mid" href="javascript:void(0);" name="street_name">街道5</a><a class="inline_layout_mid" href="javascript:void(0);" name="street_name">街道6</a><a class="inline_layout_mid" href="javascript:void(0);" name="street_name">街道7</a><a class="inline_layout_mid" href="javascript:void(0);" name="street_name">街道8</a>
+									<a class="inline_layout_mid" href="javascript:void(0);" name="street_name">街道9</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

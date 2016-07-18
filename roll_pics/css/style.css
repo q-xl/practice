@@ -1,0 +1,16 @@
+*{ margin: 0; padding: 0; }
+a{ text-decoration: none; color: #4b4b4b; }
+
+.roll_pics_content{ width: 1171px; height: 179px; margin-top: 20px; }
+.roll_pics_content>div{ width: 97%; height: 100%; margin: 0 auto; }
+.roll_pics_content a{ width: 45px; height: 81px; line-height: 81px; text-align: center; background: #f3f3f3; border: 1px solid #c4c4c4; font-size: 25px; margin-top: 33px; }
+.roll_pics_content .arrow_left{ border-radius: 45px 0 0 45px; }
+.roll_pics_content .arrow_right{ border-radius: 0 45px 45px 0; }
+.roll_pics_list{ position: relative; width: 1037px; height: 179px; overflow: hidden;}
+#roll_pics_area{ position: absolute; z-index: 2;}
+#roll_pics_area dl{ position: relative; width: 258px; text-align: center; }
+#roll_pics_area dl dt{ width: 263px; height: 165px; }
+#roll_pics_area dl dt div{ width: 227px; margin: 0 auto; padding: 7px; border: 1px solid #d1d1d1; }
+#roll_pics_area dl dd{ font-size: 12px; }
+
+.float_l{ float: left; }

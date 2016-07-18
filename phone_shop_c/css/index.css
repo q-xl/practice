@@ -1,0 +1,123 @@
+﻿/** 
+ * 优吉屯农场手机客户端首页样式
+ * by q&xl
+ * 2016.6.30
+ */
+
+/* 产品类型选择 */
+.products_type{ width: 100%; height: 160px; -webkit-display: flex; display: flex; -webkit-flex-direction: row; flex-direction: row; flex-wrap: wrap; justify-content: space-around; align-items: center; align-content: stretch; background: #fff; padding-bottom: 8px;}
+.products_type dl{ width: 115px; height: 60px; text-align: center; }
+.products_type dl dt{ width: 44px; height: 43px; border-radius: 50%; text-align: center; margin: 0 auto 6px auto; }
+.products_type dl dt img{ width: 26px; margin-top: 5px; }
+.products_type dl dd{ color: #9f9f9f; }
+
+/* 产品类型颜色设定 */
+.product_type1{ background: #95d24b; }
+.product_type2{ background: #f7689e; }
+.product_type3{ background: #fbb100; }
+.product_type4{ background: #56daea; }
+.product_type5{ background: #d3a6ed; }
+.product_type6{ background: #5cd8bd; }
+.product_type7{ background: #f7689e; }
+.product_type8{ background: #ffd02d; }
+
+/* 今日推荐 */
+.today_recommend{ width: 100%; height: 150px; border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; background: #fff; margin: 8px auto; }
+.today_recommend_title{ width: 100%; height: 36px;}
+.today_recommend_title h4{ width: 100px; color: #690; font-size: 12.15pt; font-weight: normal; text-align: center; }
+.today_recommend_title a{ text-decoration: none; width: 80px; color: #a2a2a2; font-size: 9pt; text-align: center; }
+.today_recommend_content{ width: 100%; }
+.today_recommend_content a{ text-decoration: none; }
+.today_recommend_content dl{ width: 119px; height: 103px; border-right: 1px solid #eee; padding: 0 20px; }
+.today_recommend_content dl:last-child{ border-right: none; }
+.today_recommend_content dl dt img{ width: 100%; }
+.today_recommend_content dl dd span{ display: block; width: 100%; vertical-align: middle; color: #515151;white-space:nowrap; overflow: hidden; text-overflow:ellipsis;}
+.today_recommend_content dl dd strong{ vertical-align: middle; color: #d81c1c; font-size: 11.7pt;}
+
+/* 发现农场 */
+.discover_farm{ width: 100%; height: 174px; border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; background: #fff; margin: 8px auto; }
+.discover_farm_title{ width: 100%; height: 36px;}
+.discover_farm_title h4{ width: 100px; color: #151521; font-size: 12.15pt; font-weight: normal; text-align: center; }
+.discover_farm_title a{ text-decoration: none; width: 80px; color: #a2a2a2; font-size: 9pt; text-align: center; }
+.discover_farm_content{ width: 100%; }
+.discover_farm_content dl{ width: 93px; height: 125px; }
+.discover_farm_content dl dt img{ width: 100%; }
+.discover_farm_content dl dd strong{ vertical-align: middle; color: #363636; font-size: 10.8pt; font-weight: normal;}
+.discover_farm_content dl dd span{ vertical-align: middle; color: #8c8c8c;}
+
+/* 预售商品 */
+.presale_product{ width: 100%; height: 132px; border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; background: #fff; margin: 8px auto; }
+.presale_product_title{ width: 100%; height: 36px;}
+.presale_product_title h4{ width: 100px; color: #151521; font-size: 12.15pt; font-weight: normal; text-align: center; }
+.presale_product_title a{ text-decoration: none; width: 80px; color: #a2a2a2; font-size: 9pt; text-align: center; }
+.presale_product_content{ width: 100%; }
+.pic_box{ position: relative; width: 93px; height: 85px; }
+.pic_box img{ width: 100%; border-radius: 5px; }
+.pic_detail{ position: absolute; z-index: 2; left: 0; bottom: 0; color: #fff; width: 100%; height: 23px; line-height: 23px; background: rgba(0,0,0,0.5); }
+
+/* 媒体查询 */
+@media (min-height: 800px) {
+
+	.today_recommend{ height: 170px; }
+	.today_recommend_content dl{ height: 123px; }
+
+}
+@media (max-width: 425px) {
+	
+	.products_type dl{ width: 101px; }
+
+	.today_recommend_content dl{ width: 97px; }
+}
+
+@media (max-width: 414px) {
+
+	.products_type dl{ width: 90px; }
+
+	.today_recommend_content dl{ width: 97px; }
+}
+
+/* 魅族mx2 */
+
+@media (max-width: 400px) {
+
+	.products_type dl{ width: 90px; }
+
+	.today_recommend_content dl{ width: 92px; }
+}
+
+
+
+@media (max-width: 384px) {
+
+	.products_type dl{ width: 90px; }
+
+	.today_recommend_content dl{ width: 87px; }
+}
+
+
+
+@media (max-width: 375px) {
+
+	.products_type dl{ width: 90px; }
+
+	.today_recommend_content dl{ width: 84px; }
+}
+
+
+
+@media (max-width: 360px) {
+
+	.products_type dl{ width: 90px; }
+
+	.today_recommend_content dl{ width: 79px; }
+}
+
+
+
+@media (max-width: 320px) {
+
+	.products_type dl{ width: 80px; }
+
+	.today_recommend_content dl{ width: 66px; height: 85px; }
+
+}

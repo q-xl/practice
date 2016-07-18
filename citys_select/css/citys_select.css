@@ -1,0 +1,47 @@
+*{ margin: 0; padding: 0; }
+
+a{ text-decoration: none; color: #333; }
+
+.div_form_body_simple{ width: 100%; margin:15px 0 0 0px;}
+
+.div_form_body_simple button{ margin-left:131px;  height: 35px; line-height:35px; background: #690; color: #fff; font-weight: bold; border: none; border-radius: 3px; box-shadow: 0px 1px 1px #000; text-align:center; cursor: pointer; font-size: 14px; margin-top: 10px;padding:0 26px 0 26px}
+
+.div_form_body_simple button:hover,.div_form_body_simple .button:hover{ background: #b3cc80; }
+
+.form_item{ width: 100%; height: auto; margin: 0 auto 12px auto; }
+.form_item textarea{ width: 300px; height: 70px; padding-top: 10px; padding-left: 16px; margin-right: 17px; vertical-align: top; border: 1px solid #aaa; }
+
+.form_item_title{ width: 125px; text-align: right; font-size: 12px; display: inline-block; vertical-align: middle; }
+.form_item_title strong{ color: #f67b14; }
+.form_item_title,.form_item_label{ height: 28px; line-height: 28px; color: #4b4b4b;}
+.form_item_upload{ display: inline-block; vertical-align: top; }
+
+.form_item_label{ width: auto; display: inline-block; vertical-align: middle;}
+.form_item_label strong{ font-size: 24px; vertical-align: middle; margin-right: 10px;}
+.form_item_label b{ vertical-align: middle; margin-left: 10px; color: #f67b14;}
+.form_item_label img{ vertical-align: middle; margin: 0 0 0 10px;}
+
+.form_select{ width: 310px; height: 28px; padding-left: 8px;}
+
+.form_checkbox,.form_label{ display: inline-block; vertical-align: middle; }
+
+#city_select{ width: 300px; line-height: 30px; padding-left: 16px; margin-right: 17px; border: 1px solid #690; color: #ccc; font-size: 12px; }
+#city_select img{ margin-top: 11px; margin-right: 19px; }
+.city_select_box{ display: none; position: absolute; z-index: 9; margin-left: -17px; width: 316px; height: 249px; border: 1px solid #aaa; background: #fff;}
+.city_type_tab{ width: 100%; height: 30px; }
+.city_type_tab a{ width: 78px; height: 100%; text-align: center; border-right: 1px solid #ccc; }
+.city_type_tab .select_type{ background: #fff; color: #690; }
+.city_type_tab .normal_type{ background: #f0f0f0; color: #333; }
+.choose_items{ width: 100%; }
+.name_group{ width: 90%; margin: 0 auto; }
+.name_group label{ width: 24px; }
+.name_group div{ width: 243px; }
+.name_group div a{ width: 40px; text-align: center; }
+.name_group div a:hover{ background: #ddf4e5; color: #690; }
+
+/* 优先级较高的全局样式 */
+.float_l{ float: left; }
+.float_r{ float: right; }
+.inline_layout_mid{ display: inline-block; vertical-align: middle; }
+.inline_layout_top{ display: inline-block; vertical-align: top; }
+.inline_layout_bot{ display: inline-block; vertical-align: bottom; }
