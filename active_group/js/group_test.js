@@ -1,12 +1,25 @@
 /*
 	动态群组架构图
 	by q&xl
-	2016.04.29
+	2016.09.23
 */ 
+
+//测试json
+var test_json = {
+	"level2":
+	{
+		"floor1":[0,1,1,0,0,1,0,1],
+		"floor2":[0,1,0,1,0,0],
+		"floor3":[0,1,0],
+		"floor4":[1,0,1,0,1,0,1],
+		"floor5":[1,0,1,0,1,0,0,1,1,1,1,1,0,1,0,0],
+		"floor6":[0,1,0,1],
+		"floor7":[0,0,1,0,0]
+	}
+}
 
 //全局变量
 var i,
-	j,
 	circle = 10,//圆形半径，需要与css对应
 	group_blank = 50,//层间距，需要与css对应
 	nodes_max = 6;//最底层每行显示最大节点数
@@ -32,31 +45,21 @@ var second_group = "<div class='second_group'></div>",
 	y_line = "<div class='y_line sub_y'></div>";
 
 window.onload = function(){
-	var second_num = 7,//第二层总数
-		second_objs = {},//用于装载所有第二层的对象
-		third_objs = {
-			"0":[0,1,1,0,0,1,0,1],
-			"1":[0,1,0,1,0,0],
-			"2":[0,1,0],
-			"3":[1,0,1,0,1,0,1],
-			"4":[1,0,1,0,1,0,0,1,1,1,1,1,0,1,0,0],
-			"5":[0,1,0,1],
-			"6":[0,0,1,0,0]
-		},//第三层节点内容
-		main_y_h = 0;//主竖线高度
+
+	var second_objs = {},//用于装载所有第二层的对象
+		main_y_h = 0;
 
 	//循环封装输出，生成第二层与第三层
-	for (i = 0; i < second_num; i++) {
+	for(key in test_json["level2"]){
 		var new_group = $(second_group),
 			new_subgroup = $(third_group);
-		for(j = 0; j < third_objs[i].length; j++){
-			
+		for(i = 0; i<test_json["level2"][key].length; i++){
 			//当第三层节点数超过上限时的判断
-			if(j!=0 && j%nodes_max==0){
+			if(i!=0 && i%nodes_max==0){
 				new_subgroup.append(y_line);
 			}
 			//判断第三层节点状态，加载不同的样式
-			switch(third_objs[i][j]){
+			switch(test_json["level2"][key][i]){
 				case 0:new_subgroup.append(third_nodes_type1);break;
 				case 1:new_subgroup.append(third_nodes_type2);break;
 				default:break;

@@ -22,7 +22,7 @@ body{ font-size: 12px; font-family: "Microsoft YaHei";}
 .second_group:last-child{ margin-bottom: 0px;}
 .third_group{ display: none; vertical-align: top;}
 .first_node,.third_nodes{ display: inline-block; vertical-align: middle;}
-.second_nodes{ display: inline-block; vertical-align: top;}
+.second_nodes{ display: inline-block; vertical-align: middle;}
 .circle{ display: inline-block; vertical-align: middle; width: 20px; height: 20px; border-radius: 50%; background: #c00;}
 .first_node .circle{ background: #c00;}
 .second_nodes .circle{ background: #0c0; cursor: pointer;}
