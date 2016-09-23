@@ -1,0 +1,57 @@
+"Provice":
+[
+	{
+    "ProviceName": "3",
+    "City": [
+        {
+            "CityName": "1",
+            "Area": [
+            	{
+            		"AreaName": "2",
+            		"Street":[
+            			{
+            				"StreetName":"1"
+            			}
+            		]
+            	},
+            	{
+            		"AreaName": "1",
+            		"Street":[
+            			{
+            				"StreetName":"1"
+            			}
+            		]
+            	}
+            ]
+        },
+        {
+            "LineNum": "3",
+            "LineState": "0"
+        },
+        {
+            "LineNum": "5",
+            "LineState": "0"
+        },
+        {
+            "LineNum": "6",
+            "LineState": "1"
+        },
+        {
+            "LineNum": "7",
+            "LineState": "0"
+        },
+        {
+            "LineNum": "9",
+            "LineState": "1"
+        },
+        {
+            "LineNum": "11",
+            "LineState": "0"
+        },
+        {
+            "LineNum": "12",
+            "LineState": "1"
+        }
+    ]
+	}
+]

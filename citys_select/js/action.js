@@ -1,7 +1,7 @@
 var i,
 	key,
 	city_select_flag = true,
-	address_array = new Array(),
+	address_array = {},
 	address_str = "";
 
 $(document).ready(function() {
@@ -9,7 +9,9 @@ $(document).ready(function() {
 	$("#city_select").click(function(event) {
 		if(city_select_flag){
 			$(".city_select_box").show();
+
 			change_content($(".choose_items").children('div[id]'),$(".choose_items").children('div[id]:first'),$(".city_type_tab").children("a[class~='select_type']"),$(".city_type_tab").children('a:first'));
+
 			city_select_flag = false;
 		}else{
 			get_address($(this));
@@ -27,11 +29,16 @@ $(document).ready(function() {
 	$(".choose_items").children('div[id]').find('a').bind({
 		click:function(){
 
-			$("#"+$(this).attr("name")).text($(this).text());
-			address_array[$(this).attr("name")] = $(this).text();
+			var address_attr = $(this).attr("name");
 
-			if($("#"+$(this).attr("name")).next().length!=0){
-				change_content($("#"+$(this).attr("name").slice(0,-5)+"_collection"),$("#"+$(this).attr("name").slice(0,-5)+"_collection").next(),$("#"+$(this).attr("name")),$("#"+$(this).attr("name")).next());
+			$("#"+address_attr).text($(this).text());
+			address_array[address_attr] = $(this).text();
+
+			if($("#"+address_attr).next().length!=0){
+				
+				//get data here.
+				
+				change_content($("#"+address_attr.slice(0,-5)+"_collection"),$("#"+address_attr.slice(0,-5)+"_collection").next(),$("#"+address_attr),$("#"+address_attr).next());
 			}else{
 				get_address($("#city_select"));
 			}
