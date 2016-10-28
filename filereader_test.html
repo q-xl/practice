@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>filereader test</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+</head>
+<body>
+	<p>
+		<label>请选择一个文件：</label>
+		<input type="file" id="file" />
+		<button onclick="readAsDataURL()">读取图像</button>
+		<button onclick="readAsBinaryString()">读取二进制数据</button>
+		<button onclick="readAsText()">读取文本文件</button>
+	</p>
+	<div id="result" name="result">结果显示在这里</div>
+</body>
+<script type="text/javascript">
+	var result = document.getElementById("result"),
+		file = document.getElementById("file");  
+
+	if(window.FileReader) {  
+		//var fr = new FileReader();
+		
+		//判断浏览器是否支持FileReader接口
+		if(typeof FileReader == 'undefined'){
+			result.InnerHTML = "<p>您的浏览器不支持FileReader接口！</p>";
+			//使选择控件不可操作
+			file.setAttribute("disabled","disabled");
+		}
+
+	}  
+	else {  
+	    alert("Not supported by your browser!");  
+	}
+
+	function readAsDataURL(){
+		console.log(document.getElementById("file"));
+		file = document.getElementById("file").files[0];
+	    //检验是否为图像文件
+		if(!/image\/\w+/.test(file.type)){
+			alert("这货不是图片。");
+			return false;
+		}
+		var reader = new FileReader();
+	    //将文件以Data URL形式读入页面  
+		reader.readAsDataURL(file);
+		reader.onload = function(e){
+	        //显示文件  
+			result.innerHTML = '<img src="' + this.result + '" alt="" />';
+		}
+	}
+
+	function readAsBinaryString(){
+		file = document.getElementById("file").files[0];
+		var reader = new FileReader();
+	    //将文件以二进制形式读入页面  
+		reader.readAsBinaryString(file);
+		reader.onload = function(f){
+	        //显示文件
+			result.innerHTML = this.result;
+		}
+	}
+
+	function readAsText(){
+		file = document.getElementById("file").files[0];
+		var reader = new FileReader();
+	    //将文件以文本形式读入页面
+		reader.readAsText(file);
+		reader.onload = function(f){
+	        //显示文件
+			result.innerHTML = this.result;
+		}
+	}
+	
+</script>
+</html>

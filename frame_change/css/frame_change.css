@@ -1,0 +1,127 @@
+*{ margin: 0; padding: 0; }
+
+/*.col_loop(2);
+.col_loop(4);
+.col_loop(6);
+.col_loop(8);
+.col_loop(10);
+.row_loop(2);
+.row_loop(4);
+.row_loop(6);
+.row_loop(8);
+.row_loop(10);*/
+
+.frame_test {
+  width: 100%;
+}
+.frame_test table {
+  width: 100%;
+}
+@media screen {
+  .frame_test {
+    /*.bg_color(@main_bg);*/
+    height: 700px;
+  }
+  .frame_test table {
+    background: #ececec;
+  }
+  .frame_test table thead tr th {
+    height: 42px;
+    background: #9d9d9d;
+    color: #ffffff;
+  }
+  .frame_test table tbody tr td {
+    height: 36px;
+    background: #ffffff;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .frame_test {
+    /*.bg_color(@main_blue);*/
+    height: 500px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 767px) {
+  .frame_test {
+    /*.bg_color(@font_grey);*/
+    height: 300px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 767px) and (min-width: 320px) {
+  .frame_test {
+    /*.bg_color(@font_black);*/
+    height: 100px;
+  }
+  .frame_test table {
+    background: #ffffff;
+  }
+  .frame_test table thead tr th {
+    display: none;
+  }
+  .frame_test table tbody tr {
+    position: relative;
+    display: block;
+    height: 185px;
+    margin: 0 0 10px 0;
+    border-top: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+  }
+  .frame_test table tbody tr td:nth-child(1) {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .frame_test table tbody tr td:nth-child(2) {
+    position: absolute;
+    z-index: 2;
+    top: 37px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .frame_test table tbody tr td:nth-child(3) {
+    position: absolute;
+    z-index: 2;
+    top: 74px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .frame_test table tbody tr td:nth-child(4) {
+    position: absolute;
+    z-index: 2;
+    top: 111px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .frame_test table tbody tr td:nth-child(5) {
+    position: absolute;
+    z-index: 2;
+    top: 148px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .frame_test table tbody tr td {
+    height: 36px;
+    line-height: 36px;
+    text-align: left;
+    background: #ffffff;
+    border-bottom: 1px solid #ececec;
+  }
+  .frame_test table tbody tr td:before {
+    content: attr(data-thead);
+    display: inline-block;
+    width: 30%;
+    height: 36px;
+    margin: 0 10px 0 0;
+    background: #9d9d9d;
+    color: #ffffff;
+    text-align: center;
+  }
+}
