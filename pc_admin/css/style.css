@@ -1,0 +1,72 @@
+*{ margin: 0; padding: 0;}
+
+html{ overflow-y: hidden;}
+body{ font-size: 14px; font-family: "Microsoft YaHei";}
+ul li{ list-style: none;}
+
+.all{ width: 100%;}
+
+.top{ width: 100%; background: url("../images/bg-n.jpg");}
+.user_link{ height: 24px; text-align: right; color: #fff; margin: 0px 1.4em 0.7em 0px; padding-top: 0.7em;}
+.user_link a{ text-decoration: none; color: #fff;}
+.main_title{ height: 70px; margin: 0 0 0 2.5em;}
+.main_nav{ width: 1004px; height: 37px; margin: 0 auto; padding: 0 0 0 1.4em; background: url("../images/hh.png") no-repeat;}
+.main_nav a{ display: inline-block; text-decoration: none; margin: 0.7em 0 0 0; padding: 0.07em 1.25em; color: #fff;}
+.main_nav .normal_link{ border-right: 1px solid #fff;}
+.main_nav .last_link{ border-right: none;}
+
+.main{ width: 100%; margin-top: 3px;}
+.sidebar{ display: inline-block; vertical-align: top; width: 15%; height: 100%; background: #e3f7bd;}
+.sidebar_title{ width: 100%; height: 45px; background: url("../images/sidebar_title.jpg") repeat-x; text-align: center; color: #233310; font-size: 1.2em; line-height: 45px;}
+.sidebar_content{ background: #e3f7bd; color: #233310; text-align: center;}
+.sidebar_sub{ color: #666;}
+.sidebar_sub span{ display: block; height: 30px; line-height: 30px; border-bottom: 1px solid #a9e76b; cursor: pointer;}
+.sidebar_sub ul{ background: #f2f7e2; padding: 10px 0 10px 0;}
+.sidebar_sub ul li{ height: 35px; line-height: 35px; text-align: left; padding: 0 0 0 30px;}
+.sidebar_sub ul li a{ display: block; width: 100%; text-decoration: none; color: #233310;}
+.sidebar_sub .selected_link{ background: #e3f7bd;}
+.sidebar_sub .open_sub{ display: block;}
+.sidebar_sub .close_sub{ display: none;}
+.right{ display: inline-block; vertical-align: top; width: 84%; height: 100%;}
+.right .content_tab{ width: 100%; height: 24px; background: #ccc;}
+.right .content_tab span{ display: inline-block; vertical-align: middle; width: auto; height: 18px; padding: 3px 5px; cursor: pointer;}
+.right .content_tab .normal_tab{ color: #666; background: #ccc;}
+.right .content_tab .selected_tab{ color: #333; background: #eee;}
+.right .content_tab span a{ display: inline-block; text-decoration: none; color: #666;}
+.right .content_tab span a:hover{ color: #0c0;}
+.right iframe{ width: 100%; height: 100%;}
+
+.content_list{ width: 80%; margin: 0 auto;}
+.content_table{ text-align: center; border: 1px solid #ccc;}
+.content_table caption{ height: 36px; line-height: 36px; font-size: 1.5em;}
+.content_table tr th,.content_table tr td{ height: 36px; text-align: center; border: 1px solid #ccc;}
+.content_table tr td input[type='text']{ border: 1px solid #ccc; background: #fff; width: 96%; height: 86%;}
+.content_table tr td input[type='radio']{ /*visibility: hidden;*/ width: 0;}
+.content_table tr td input[type='checkbox']{ /*visibility: hidden;*/ width: 0;}
+.content_table tr td label{ vertical-align: middle;}
+.content_table tr td label img{ width: 16px; vertical-align: middle;}
+.content_table tr td button{ border: 1px solid #ccc; background: #e3f7bd; width: 120px; height: 30px; color: #666; cursor: pointer;}
+.content_table tr td .select_content{ width: 96%; margin: 0 auto; border: 1px solid #ccc; text-align: right;}
+.content_table tr td .select_content select{ width: 100%; border: none;}
+
+.wechat_content{ background: url("../images/bg_btn.jpg") no-repeat;background-position: bottom; width: 100%; height: 600px;
+}
+.shouji_left{ width: 35%; margin-left: 3%; margin-top:7%; display: inline-block; height: 50%; vertical-align: top;}
+.shouji_left img{ width: 100%; max-width: 713px;}
+.dowmload_right{ height: 50%; width: 50%; margin-left: 5%; margin-top:7%; display: inline-block; vertical-align: top;}
+.zi_div{ width: 100%;}
+.zi_div img{ width: 100%; max-width: 890px;}
+.erweima_div{ width:50%; margin-top:25px; display: inline-block;vertical-align: top;text-align: center;}
+.erweima_div img{ width: 70%; max-width: 220px;}
+.dowm_div{ width:35%; margin-top:25px; margin-left: 5%; display: inline-block; vertical-align: top; text-align: center;}
+.dowm_div img{ margin-top: 20%; width: 80%; max-width: 260px;}
+.dowm_div p,.erweima_div p{ margin-top: 15px; color: #747474;letter-spacing: 2px;}
+
+/* 以下为ie hack */
+.sidebar,.right,.erweima_div,.dowm_div,.dowmload_right,.shouji_left{ *display: inline;}
+.main_nav a{ *padding: 0.07em 1.2em;}
+.sidebar_sub .sidebar_sub_title{ *cursor: pointer;}
+.content_table tr td input[type='text']{ *height: auto;}
+.content_table tr td button{ *margin: 0 3px;}
+.content_table tr td .select_content{ *text-align: center;}
+.content_table tr td .select_content select{ *width: 101%;}
