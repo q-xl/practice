@@ -6,7 +6,7 @@ window.onload = function(){
 		speed = 0.02,
 		startTime = Date.now(),
 		currentTime = Date.now(),
-		svg = d3.select("body").append("svg")
+		svg = d3.select(".ball").append("svg")
 				.attr("width", width)
 				.attr("height", height),
 
